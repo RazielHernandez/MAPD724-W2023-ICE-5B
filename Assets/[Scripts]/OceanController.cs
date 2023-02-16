@@ -17,12 +17,13 @@ public class OceanController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.position -= new Vector3(0.0f, verticalSpeed);
+        Move();
+        CheckBounds();
     }
 
     void Move()
     {
-        
+        transform.position -= new Vector3(0.0f, verticalSpeed);
     }
 
     void CheckBounds()
