@@ -18,12 +18,13 @@ public class CloudController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.position -= new Vector3(horizontalSpeed, verticalSpeed);
+        Move();
+        CheckBounds();
     }
 
     void Move()
     {
-
+        transform.position -= new Vector3(horizontalSpeed, verticalSpeed);
     }
 
     void CheckBounds()
